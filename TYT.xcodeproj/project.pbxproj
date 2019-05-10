@@ -42,6 +42,7 @@
 		091867572285CF9F00BEF758 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867562285CF9F00BEF758 /* MenuItem.swift */; };
 		091867592285D0D300BEF758 /* RestMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867582285D0D300BEF758 /* RestMenuVM.swift */; };
 		0918675B2285D68A00BEF758 /* RestMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918675A2285D68A00BEF758 /* RestMenuVC.swift */; };
+		0918675D2286064F00BEF758 /* +CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918675C2286064F00BEF758 /* +CAGradientLayer.swift */; };
 		0968F1A422841DD00077158D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1A322841DD00077158D /* AppDelegate.swift */; };
 		0968F1A622841DD00077158D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1A522841DD00077158D /* MainVC.swift */; };
 		0968F1A922841DD00077158D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0968F1A722841DD00077158D /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		091867562285CF9F00BEF758 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		091867582285D0D300BEF758 /* RestMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuVM.swift; sourceTree = "<group>"; };
 		0918675A2285D68A00BEF758 /* RestMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuVC.swift; sourceTree = "<group>"; };
+		0918675C2286064F00BEF758 /* +CAGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+CAGradientLayer.swift"; sourceTree = "<group>"; };
 		0968F1A022841DD00077158D /* TYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0968F1A322841DD00077158D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0968F1A522841DD00077158D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				0918673F2285A6B300BEF758 /* +UIImage.swift */,
+				0918675C2286064F00BEF758 /* +CAGradientLayer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				0918672322846D9C00BEF758 /* ViewModel.swift in Sources */,
 				091866FA22842EF100BEF758 /* ImageMenuTVCell.swift in Sources */,
 				0918673A2285955D00BEF758 /* ColorPalette.swift in Sources */,
+				0918675D2286064F00BEF758 /* +CAGradientLayer.swift in Sources */,
 				0918672E228557EA00BEF758 /* RestDetailsMapView.swift in Sources */,
 				0918673422856CBE00BEF758 /* BottomDetailsPopup.swift in Sources */,
 				0918672722848E8400BEF758 /* MainMenuRouter.swift in Sources */,

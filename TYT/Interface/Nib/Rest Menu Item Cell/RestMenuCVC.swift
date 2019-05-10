@@ -19,7 +19,9 @@ class RestMenuCVC: UICollectionViewCell {
     didSet {
       itemImageView.image = menuItem.image
       nameLabel.text = menuItem.name
-      priceButton.setTitle("\(menuItem.price) р.", for: .normal) 
+      priceButton.setTitle("\(menuItem.price) р", for: .normal)
+      createGradientMask()
+      layoutIfNeeded()
     }
   }
 
@@ -27,5 +29,14 @@ class RestMenuCVC: UICollectionViewCell {
     super.awakeFromNib()
     containerView.setShadow(shadowRadius: 3)
     itemImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+  }
+
+  func createGradientMask() {
+    let gradient = CAGradientLayer(start: .center, end: .bottomCenter, colors: [
+        UIColor.white.cgColor,
+        UIColor.clear.cgColor
+      ], type: .axial)
+    gradient.frame = itemImageView.bounds
+    itemImageView.layer.mask = gradient
   }
 }

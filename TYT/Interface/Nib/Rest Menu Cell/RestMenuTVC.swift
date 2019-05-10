@@ -38,6 +38,7 @@ class RestMenuTVC: UITableViewCell {
 
     menuItems.bind(to: itemsCollectionView.rx.items(cellIdentifier: cellID, cellType: RestMenuCVC.self)) { _, menuItem, cell in
       cell.menuItem = menuItem
+      cell.createGradientMask()
     }.disposed(by: disposeBag)
   }
   

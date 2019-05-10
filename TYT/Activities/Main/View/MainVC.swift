@@ -35,6 +35,9 @@ class MainVC: UIViewController, ViewModelBased, Routable {
 
     viewModel.menuItems.bind(to: mainMenuTV.rx.items(cellIdentifier: cellID, cellType: ImageMenuTVCell.self)) { (_, item, cell) in
       cell.menuItem = item
+      cell.viewContainer.gestureRecognizers?.forEach {
+        cell.viewContainer.removeGestureRecognizer($0)
+      }
       cell.viewContainer.rx.tapGesture()
         .when(.recognized)
         .subscribe (onNext: { _ in
