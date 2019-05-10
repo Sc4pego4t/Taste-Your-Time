@@ -11,7 +11,7 @@ Technology stack
 
 TODO
 -------
-* Server interaction
-* Database storage
+* Server interaction( **Alomofire, RxAlomofire**)
+* Database storage(**Realm**)
 * Administrative area
 
