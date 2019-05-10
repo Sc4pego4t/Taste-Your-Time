@@ -13,12 +13,12 @@ struct MainMenuItem {
   let image: UIImage?
   let mainText: String
   let secondaryText: String
-  let type: MenuItemTypes
+  let type: MainRouteEnum
 
   public init(image: UIImage?,
               mainText: String,
               secondaryText: String = "",
-              type: MenuItemTypes = .foodCountry) {
+              type: MainRouteEnum = .foodCountry) {
     self.image = image
     self.mainText = mainText
     self.secondaryText = secondaryText

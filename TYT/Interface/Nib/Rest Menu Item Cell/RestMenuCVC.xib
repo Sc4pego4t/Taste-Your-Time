@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestMenuCVC" id="gTV-IL-0wX" customClass="RestMenuCVC" customModule="TYT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="405"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="405"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-w8-sxH" customClass="ShadowView" customModule="TYT" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="337" height="385"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIB-e8-zs0">
+                                <rect key="frame" x="0.0" y="0.0" width="337" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lIB-e8-zs0" secondAttribute="height" multiplier="9:7" id="4DE-Vu-msp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzw-RH-5hV">
+                                <rect key="frame" x="12" y="274" width="48.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDp-Mr-bdK">
+                                <rect key="frame" x="237" y="309" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.70588235290000001" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CrZ-09-XSQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="a4E-9Y-piH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bzw-RH-5hV" firstAttribute="top" secondItem="lIB-e8-zs0" secondAttribute="bottom" constant="12" id="AG4-P2-hmr"/>
+                            <constraint firstItem="Bzw-RH-5hV" firstAttribute="leading" secondItem="hPB-w8-sxH" secondAttribute="leading" constant="12" id="PFu-Jj-Bsc"/>
+                            <constraint firstAttribute="trailing" secondItem="lIB-e8-zs0" secondAttribute="trailing" id="ava-ul-g5Q"/>
+                            <constraint firstItem="HDp-Mr-bdK" firstAttribute="top" secondItem="Bzw-RH-5hV" secondAttribute="bottom" constant="12" id="eXq-Kn-bXP"/>
+                            <constraint firstItem="lIB-e8-zs0" firstAttribute="top" secondItem="hPB-w8-sxH" secondAttribute="top" id="lce-3L-HL2"/>
+                            <constraint firstAttribute="trailing" secondItem="HDp-Mr-bdK" secondAttribute="trailing" constant="20" id="nMB-VC-2Uf"/>
+                            <constraint firstItem="lIB-e8-zs0" firstAttribute="leading" secondItem="hPB-w8-sxH" secondAttribute="leading" id="xWG-zM-Xf0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hPB-w8-sxH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="6Yo-He-lnh"/>
+                <constraint firstAttribute="bottom" secondItem="hPB-w8-sxH" secondAttribute="bottom" constant="10" id="BoW-hz-Opt"/>
+                <constraint firstAttribute="trailing" secondItem="hPB-w8-sxH" secondAttribute="trailing" constant="10" id="UR2-AS-gKs"/>
+                <constraint firstItem="hPB-w8-sxH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="kqT-t8-8M5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="357" height="405"/>
+            <connections>
+                <outlet property="containerView" destination="hPB-w8-sxH" id="U22-B7-nvs"/>
+                <outlet property="itemImageView" destination="lIB-e8-zs0" id="kfo-Jh-Q73"/>
+                <outlet property="nameLabel" destination="Bzw-RH-5hV" id="2Zh-6W-QI6"/>
+                <outlet property="priceButton" destination="HDp-Mr-bdK" id="kV0-N1-pkr"/>
+            </connections>
+            <point key="canvasLocation" x="92.028985507246389" y="136.27232142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

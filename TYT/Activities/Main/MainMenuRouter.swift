@@ -22,6 +22,12 @@ class MainMenuRouter: Router {
 
   func go(toRoute route: MainRouteEnum) {
     switch route {
+    case .recent:
+      guard let restMenuVC = R.storyboard.restMenu().instantiateInitialViewController() else {
+        fatalError(R.string.errors.storyboard())
+      }
+
+      viewController.navigationController?.pushViewController(restMenuVC, animated: true)
     case .closestRests:
       guard let closestRestsVC = R.storyboard.closestRests().instantiateInitialViewController() else {
         fatalError(R.string.errors.storyboard())

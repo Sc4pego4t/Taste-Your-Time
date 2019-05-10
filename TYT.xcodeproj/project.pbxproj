@@ -14,7 +14,6 @@
 		091867032284350900BEF758 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091867022284350900BEF758 /* Localizable.strings */; };
 		0918670A228453CA00BEF758 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09186709228453CA00BEF758 /* ShadowView.swift */; };
 		0918670D2284588700BEF758 /* ClosestRests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0918670C2284588700BEF758 /* ClosestRests.storyboard */; };
-		0918670F22845B2A00BEF758 /* MenuItemTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918670E22845B2A00BEF758 /* MenuItemTypes.swift */; };
 		091867192284682500BEF758 /* ClosestRestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867182284682500BEF758 /* ClosestRestsVC.swift */; };
 		0918671B2284699900BEF758 /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0918671A2284699900BEF758 /* Errors.strings */; };
 		0918671D22846A0A00BEF758 /* ClosestRestsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918671C22846A0A00BEF758 /* ClosestRestsVM.swift */; };
@@ -34,6 +33,15 @@
 		0918673E2285A07F00BEF758 /* RestMapClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918673D2285A07F00BEF758 /* RestMapClusterView.swift */; };
 		091867402285A6B300BEF758 /* +UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918673F2285A6B300BEF758 /* +UIImage.swift */; };
 		091867422285AEC600BEF758 /* ClosestRestsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867412285AEC600BEF758 /* ClosestRestsRouter.swift */; };
+		091867452285CACE00BEF758 /* RestMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091867442285CACE00BEF758 /* RestMenu.storyboard */; };
+		0918674B2285CB9500BEF758 /* RestMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867492285CB9500BEF758 /* RestMenuTVC.swift */; };
+		0918674C2285CB9500BEF758 /* RestMenuTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0918674A2285CB9500BEF758 /* RestMenuTVC.xib */; };
+		0918674F2285CD8400BEF758 /* RestMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918674D2285CD8400BEF758 /* RestMenuCVC.swift */; };
+		091867502285CD8400BEF758 /* RestMenuCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0918674E2285CD8400BEF758 /* RestMenuCVC.xib */; };
+		091867552285CF8F00BEF758 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867542285CF8F00BEF758 /* Menu.swift */; };
+		091867572285CF9F00BEF758 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867562285CF9F00BEF758 /* MenuItem.swift */; };
+		091867592285D0D300BEF758 /* RestMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867582285D0D300BEF758 /* RestMenuVM.swift */; };
+		0918675B2285D68A00BEF758 /* RestMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918675A2285D68A00BEF758 /* RestMenuVC.swift */; };
 		0968F1A422841DD00077158D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1A322841DD00077158D /* AppDelegate.swift */; };
 		0968F1A622841DD00077158D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1A522841DD00077158D /* MainVC.swift */; };
 		0968F1A922841DD00077158D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0968F1A722841DD00077158D /* Main.storyboard */; };
@@ -51,7 +59,6 @@
 		091867022284350900BEF758 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		09186709228453CA00BEF758 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		0918670C2284588700BEF758 /* ClosestRests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClosestRests.storyboard; sourceTree = "<group>"; };
-		0918670E22845B2A00BEF758 /* MenuItemTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTypes.swift; sourceTree = "<group>"; };
 		091867182284682500BEF758 /* ClosestRestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestRestsVC.swift; sourceTree = "<group>"; };
 		0918671A2284699900BEF758 /* Errors.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Errors.strings; sourceTree = "<group>"; };
 		0918671C22846A0A00BEF758 /* ClosestRestsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestRestsVM.swift; sourceTree = "<group>"; };
@@ -71,6 +78,15 @@
 		0918673D2285A07F00BEF758 /* RestMapClusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMapClusterView.swift; sourceTree = "<group>"; };
 		0918673F2285A6B300BEF758 /* +UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIImage.swift"; sourceTree = "<group>"; };
 		091867412285AEC600BEF758 /* ClosestRestsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestRestsRouter.swift; sourceTree = "<group>"; };
+		091867442285CACE00BEF758 /* RestMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestMenu.storyboard; sourceTree = "<group>"; };
+		091867492285CB9500BEF758 /* RestMenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuTVC.swift; sourceTree = "<group>"; };
+		0918674A2285CB9500BEF758 /* RestMenuTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestMenuTVC.xib; sourceTree = "<group>"; };
+		0918674D2285CD8400BEF758 /* RestMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuCVC.swift; sourceTree = "<group>"; };
+		0918674E2285CD8400BEF758 /* RestMenuCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestMenuCVC.xib; sourceTree = "<group>"; };
+		091867542285CF8F00BEF758 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		091867562285CF9F00BEF758 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		091867582285D0D300BEF758 /* RestMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuVM.swift; sourceTree = "<group>"; };
+		0918675A2285D68A00BEF758 /* RestMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuVC.swift; sourceTree = "<group>"; };
 		0968F1A022841DD00077158D /* TYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0968F1A322841DD00077158D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0968F1A522841DD00077158D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -99,6 +115,8 @@
 		091866F122842BDA00BEF758 /* Nib */ = {
 			isa = PBXGroup;
 			children = (
+				091867472285CB4900BEF758 /* Rest Menu Item Cell */,
+				091867462285CB2D00BEF758 /* Rest Menu Cell */,
 				0918672C228556C600BEF758 /* Rest Details Map View */,
 				091866F722842EB900BEF758 /* Image Menu Cell */,
 			);
@@ -110,6 +128,7 @@
 			children = (
 				0968F1A722841DD00077158D /* Main.storyboard */,
 				0918670C2284588700BEF758 /* ClosestRests.storyboard */,
+				091867442285CACE00BEF758 /* RestMenu.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -117,6 +136,7 @@
 		091866F322842DAF00BEF758 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				091867432285C11E00BEF758 /* Rest Menu */,
 				0918670B2284585100BEF758 /* Closest Rests */,
 				091866F422842E6D00BEF758 /* Main */,
 			);
@@ -146,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				091866FC228432C900BEF758 /* MainMenuItem.swift */,
-				0918670E22845B2A00BEF758 /* MenuItemTypes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +274,59 @@
 				0918672F228558C600BEF758 /* RestDetailsMapView.xib */,
 			);
 			path = "Rest Details Map View";
+			sourceTree = "<group>";
+		};
+		091867432285C11E00BEF758 /* Rest Menu */ = {
+			isa = PBXGroup;
+			children = (
+				091867532285CF1900BEF758 /* View */,
+				091867522285CF1300BEF758 /* View Model */,
+				091867512285CF0E00BEF758 /* Model */,
+			);
+			path = "Rest Menu";
+			sourceTree = "<group>";
+		};
+		091867462285CB2D00BEF758 /* Rest Menu Cell */ = {
+			isa = PBXGroup;
+			children = (
+				091867492285CB9500BEF758 /* RestMenuTVC.swift */,
+				0918674A2285CB9500BEF758 /* RestMenuTVC.xib */,
+			);
+			path = "Rest Menu Cell";
+			sourceTree = "<group>";
+		};
+		091867472285CB4900BEF758 /* Rest Menu Item Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0918674D2285CD8400BEF758 /* RestMenuCVC.swift */,
+				0918674E2285CD8400BEF758 /* RestMenuCVC.xib */,
+			);
+			path = "Rest Menu Item Cell";
+			sourceTree = "<group>";
+		};
+		091867512285CF0E00BEF758 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				091867542285CF8F00BEF758 /* Menu.swift */,
+				091867562285CF9F00BEF758 /* MenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		091867522285CF1300BEF758 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				091867582285D0D300BEF758 /* RestMenuVM.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		091867532285CF1900BEF758 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0918675A2285D68A00BEF758 /* RestMenuVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0968F19722841DD00077158D = {
@@ -379,12 +451,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				091867032284350900BEF758 /* Localizable.strings in Resources */,
+				091867452285CACE00BEF758 /* RestMenu.storyboard in Resources */,
 				0968F1AE22841DD40077158D /* LaunchScreen.storyboard in Resources */,
 				0968F1AB22841DD40077158D /* Assets.xcassets in Resources */,
 				091866FB22842EF100BEF758 /* ImageMenuTVCell.xib in Resources */,
 				09186730228558C600BEF758 /* RestDetailsMapView.xib in Resources */,
 				0918671B2284699900BEF758 /* Errors.strings in Resources */,
 				0968F1A922841DD00077158D /* Main.storyboard in Resources */,
+				091867502285CD8400BEF758 /* RestMenuCVC.xib in Resources */,
+				0918674C2285CB9500BEF758 /* RestMenuTVC.xib in Resources */,
 				0918670D2284588700BEF758 /* ClosestRests.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,16 +564,19 @@
 			files = (
 				0918671D22846A0A00BEF758 /* ClosestRestsVM.swift in Sources */,
 				0918673E2285A07F00BEF758 /* RestMapClusterView.swift in Sources */,
+				091867552285CF8F00BEF758 /* Menu.swift in Sources */,
+				0918675B2285D68A00BEF758 /* RestMenuVC.swift in Sources */,
 				091866FD228432C900BEF758 /* MainMenuItem.swift in Sources */,
 				0918673C22859D2500BEF758 /* RestMapAnnotationView.swift in Sources */,
 				091867192284682500BEF758 /* ClosestRestsVC.swift in Sources */,
 				091867402285A6B300BEF758 /* +UIImage.swift in Sources */,
 				0968F1A622841DD00077158D /* MainVC.swift in Sources */,
 				0918673822858C5200BEF758 /* RestMapPointAnnotation.swift in Sources */,
+				091867592285D0D300BEF758 /* RestMenuVM.swift in Sources */,
 				091867422285AEC600BEF758 /* ClosestRestsRouter.swift in Sources */,
 				0968F1A422841DD00077158D /* AppDelegate.swift in Sources */,
 				0918670A228453CA00BEF758 /* ShadowView.swift in Sources */,
-				0918670F22845B2A00BEF758 /* MenuItemTypes.swift in Sources */,
+				0918674F2285CD8400BEF758 /* RestMenuCVC.swift in Sources */,
 				09186736228589F500BEF758 /* RoundShadowButton.swift in Sources */,
 				0918672B228490E200BEF758 /* Routable.swift in Sources */,
 				0918672922848FEB00BEF758 /* Router.swift in Sources */,
@@ -509,7 +587,9 @@
 				0918672E228557EA00BEF758 /* RestDetailsMapView.swift in Sources */,
 				0918673422856CBE00BEF758 /* BottomDetailsPopup.swift in Sources */,
 				0918672722848E8400BEF758 /* MainMenuRouter.swift in Sources */,
+				0918674B2285CB9500BEF758 /* RestMenuTVC.swift in Sources */,
 				091867002284336700BEF758 /* MainMenuVM.swift in Sources */,
+				091867572285CF9F00BEF758 /* MenuItem.swift in Sources */,
 				0918672122846D7100BEF758 /* ViewModelBased.swift in Sources */,
 				0968F1BA228428500077158D /* R.generated.swift in Sources */,
 			);

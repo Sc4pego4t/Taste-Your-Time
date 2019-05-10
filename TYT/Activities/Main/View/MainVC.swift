@@ -32,19 +32,17 @@ class MainVC: UIViewController, ViewModelBased, Routable {
     let cellID = R.reuseIdentifier.mainMenuCell.identifier
 
     mainMenuTV.register(UINib(resource: R.nib.imageMenuTVCell), forCellReuseIdentifier: cellID)
-    print("Cell created")
 
     viewModel.menuItems.bind(to: mainMenuTV.rx.items(cellIdentifier: cellID, cellType: ImageMenuTVCell.self)) { (_, item, cell) in
       cell.menuItem = item
       cell.viewContainer.rx.tapGesture()
         .when(.recognized)
         .subscribe (onNext: { _ in
-          print(item)
-          self.router.go(toRoute: .closestRests)
+          print("CLICK\(item)")
+          self.router.go(toRoute: item.type)
         }).disposed(by: self.disposeBag)
 
     }.disposed(by: disposeBag)
-
   }
 
 }

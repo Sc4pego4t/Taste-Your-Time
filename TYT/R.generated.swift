@@ -16,10 +16,12 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 13 images.
+  /// This `R.image` struct is generated, and contains static references to 21 images.
   struct image {
     /// Image `LaunchImage`.
     static let launchImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "LaunchImage")
+    /// Image `borsh`.
+    static let borsh = Rswift.ImageResource(bundle: R.hostingBundle, name: "borsh")
     /// Image `elrest`.
     static let elrest = Rswift.ImageResource(bundle: R.hostingBundle, name: "elrest")
     /// Image `emptystar`.
@@ -30,12 +32,18 @@ struct R: Rswift.Validatable {
     static let food = Rswift.ImageResource(bundle: R.hostingBundle, name: "food")
     /// Image `fran`.
     static let fran = Rswift.ImageResource(bundle: R.hostingBundle, name: "fran")
+    /// Image `fuagra`.
+    static let fuagra = Rswift.ImageResource(bundle: R.hostingBundle, name: "fuagra")
+    /// Image `greek`.
+    static let greek = Rswift.ImageResource(bundle: R.hostingBundle, name: "greek")
     /// Image `ital`.
     static let ital = Rswift.ImageResource(bundle: R.hostingBundle, name: "ital")
     /// Image `jap`.
     static let jap = Rswift.ImageResource(bundle: R.hostingBundle, name: "jap")
     /// Image `location`.
     static let location = Rswift.ImageResource(bundle: R.hostingBundle, name: "location")
+    /// Image `losos`.
+    static let losos = Rswift.ImageResource(bundle: R.hostingBundle, name: "losos")
     /// Image `maxim`.
     static let maxim = Rswift.ImageResource(bundle: R.hostingBundle, name: "maxim")
     /// Image `near`.
@@ -44,10 +52,23 @@ struct R: Rswift.Validatable {
     static let palkin = Rswift.ImageResource(bundle: R.hostingBundle, name: "palkin")
     /// Image `pin`.
     static let pin = Rswift.ImageResource(bundle: R.hostingBundle, name: "pin")
+    /// Image `rezoto`.
+    static let rezoto = Rswift.ImageResource(bundle: R.hostingBundle, name: "rezoto")
+    /// Image `spagetti`.
+    static let spagetti = Rswift.ImageResource(bundle: R.hostingBundle, name: "spagetti")
+    /// Image `steikdenver`.
+    static let steikdenver = Rswift.ImageResource(bundle: R.hostingBundle, name: "steikdenver")
+    /// Image `zezar`.
+    static let zezar = Rswift.ImageResource(bundle: R.hostingBundle, name: "zezar")
     
     /// `UIImage(named: "LaunchImage", bundle: ..., traitCollection: ...)`
     static func launchImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.launchImage, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "borsh", bundle: ..., traitCollection: ...)`
+    static func borsh(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.borsh, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "elrest", bundle: ..., traitCollection: ...)`
@@ -75,6 +96,16 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.fran, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "fuagra", bundle: ..., traitCollection: ...)`
+    static func fuagra(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.fuagra, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "greek", bundle: ..., traitCollection: ...)`
+    static func greek(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.greek, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "ital", bundle: ..., traitCollection: ...)`
     static func ital(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.ital, compatibleWith: traitCollection)
@@ -88,6 +119,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "location", bundle: ..., traitCollection: ...)`
     static func location(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.location, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "losos", bundle: ..., traitCollection: ...)`
+    static func losos(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.losos, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "maxim", bundle: ..., traitCollection: ...)`
@@ -110,15 +146,39 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.pin, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "rezoto", bundle: ..., traitCollection: ...)`
+    static func rezoto(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.rezoto, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "spagetti", bundle: ..., traitCollection: ...)`
+    static func spagetti(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.spagetti, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "steikdenver", bundle: ..., traitCollection: ...)`
+    static func steikdenver(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.steikdenver, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "zezar", bundle: ..., traitCollection: ...)`
+    static func zezar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.zezar, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
     /// Nib `ImageMenuTVCell`.
     static let imageMenuTVCell = _R.nib._ImageMenuTVCell()
     /// Nib `RestDetailsMapView`.
     static let restDetailsMapView = _R.nib._RestDetailsMapView()
+    /// Nib `RestMenuCVC`.
+    static let restMenuCVC = _R.nib._RestMenuCVC()
+    /// Nib `RestMenuTVC`.
+    static let restMenuTVC = _R.nib._RestMenuTVC()
     
     /// `UINib(name: "ImageMenuTVCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.imageMenuTVCell) instead")
@@ -132,6 +192,18 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.restDetailsMapView)
     }
     
+    /// `UINib(name: "RestMenuCVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.restMenuCVC) instead")
+    static func restMenuCVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.restMenuCVC)
+    }
+    
+    /// `UINib(name: "RestMenuTVC", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.restMenuTVC) instead")
+    static func restMenuTVC(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.restMenuTVC)
+    }
+    
     static func imageMenuTVCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ImageMenuTVCell? {
       return R.nib.imageMenuTVCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ImageMenuTVCell
     }
@@ -140,18 +212,30 @@ struct R: Rswift.Validatable {
       return R.nib.restDetailsMapView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RestDetailsMapView
     }
     
+    static func restMenuCVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RestMenuCVC? {
+      return R.nib.restMenuCVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RestMenuCVC
+    }
+    
+    static func restMenuTVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RestMenuTVC? {
+      return R.nib.restMenuTVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RestMenuTVC
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `RestMenuCVC`.
+    static let restMenuCVC: Rswift.ReuseIdentifier<RestMenuCVC> = Rswift.ReuseIdentifier(identifier: "RestMenuCVC")
+    /// Reuse identifier `RestMenuCell`.
+    static let restMenuCell: Rswift.ReuseIdentifier<RestMenuTVC> = Rswift.ReuseIdentifier(identifier: "RestMenuCell")
     /// Reuse identifier `mainMenuCell`.
     static let mainMenuCell: Rswift.ReuseIdentifier<ImageMenuTVCell> = Rswift.ReuseIdentifier(identifier: "mainMenuCell")
     
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
   struct storyboard {
     /// Storyboard `ClosestRests`.
     static let closestRests = _R.storyboard.closestRests()
@@ -159,6 +243,8 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `RestMenu`.
+    static let restMenu = _R.storyboard.restMenu()
     
     /// `UIStoryboard(name: "ClosestRests", bundle: ...)`
     static func closestRests(_: Void = ()) -> UIKit.UIStoryboard {
@@ -173,6 +259,11 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    
+    /// `UIStoryboard(name: "RestMenu", bundle: ...)`
+    static func restMenu(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.restMenu)
     }
     
     fileprivate init() {}
@@ -308,6 +399,34 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    struct _RestMenuCVC: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = RestMenuCVC
+      
+      let bundle = R.hostingBundle
+      let identifier = "RestMenuCVC"
+      let name = "RestMenuCVC"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RestMenuCVC? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RestMenuCVC
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _RestMenuTVC: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = RestMenuTVC
+      
+      let bundle = R.hostingBundle
+      let identifier = "RestMenuCell"
+      let name = "RestMenuTVC"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RestMenuTVC? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RestMenuTVC
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -316,6 +435,7 @@ struct _R: Rswift.Validatable {
       try closestRests.validate()
       try launchScreen.validate()
       try main.validate()
+      try restMenu.validate()
     }
     
     struct closestRests: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -352,6 +472,20 @@ struct _R: Rswift.Validatable {
       
       let bundle = R.hostingBundle
       let name = "Main"
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct restMenu: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = RestMenuVC
+      
+      let bundle = R.hostingBundle
+      let name = "RestMenu"
       
       static func validate() throws {
         if #available(iOS 11.0, *) {

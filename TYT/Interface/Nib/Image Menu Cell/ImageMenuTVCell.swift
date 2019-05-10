@@ -25,9 +25,6 @@ class ImageMenuTVCell: UITableViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    viewContainer.layer.shadowColor = UIColor.black.cgColor
-    viewContainer.layer.shadowOffset = CGSize(width: 0, height: 3.0)
-    viewContainer.layer.shadowRadius = 6
-    viewContainer.layer.shadowOpacity = 0.8
+    viewContainer.setShadow(shadowRadius: 6)
   }
 }

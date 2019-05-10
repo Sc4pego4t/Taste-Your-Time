@@ -9,7 +9,16 @@
 import UIKit
 
 class ShadowView: UIView {
-  var presetCornerRadius: CGFloat = 10
+
+  func setShadow(shadowColor: CGColor = UIColor.black.cgColor,
+                 shadowOffset: CGSize = CGSize(width: 0, height: 3.0),
+                 shadowOpacity: Float = 0.8,
+                 shadowRadius: CGFloat) {
+    self.layer.shadowColor = shadowColor
+    self.layer.shadowOffset = shadowOffset
+    self.layer.shadowRadius = shadowRadius
+    self.layer.shadowOpacity = shadowOpacity
+  }
 
   /*
    once the bounds of the drop shadow view (container view) is initialized,
@@ -23,7 +32,7 @@ class ShadowView: UIView {
   }
 
   private func setupShadowPath() {
-    self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: presetCornerRadius).cgPath
+    self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
 
     // further optimization by rasterizing the container view and its shadow into bitmap instead of dynamically rendering it every time
     // take note that the rasterized bitmap will be saved into memory and it might take quite some memory if you have many cells
