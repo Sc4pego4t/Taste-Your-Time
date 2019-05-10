@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  TYT
+
+  Created by Андрей Глухих on 09/05/2019.
+  Copyright © 2019 scapegoat. All rights reserved.
+*/
+"recent" = "Вы недавно были в ресторане \"Ель\"";
+"closestRests" = "Ближайшие рестораны";
+"italyFood" = "Итальянская кухня";
+"japanFood" = "Японская кухня";
+"franceFood" = "Французская кухня";
+
+"seeMenu" = "Посмотреть меню";
+"seeOnMap" = "Посмотреть на карте";
+
+
+

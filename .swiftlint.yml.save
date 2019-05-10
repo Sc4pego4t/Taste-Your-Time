@@ -1,0 +1,17 @@
+disabled_rules:
+- line_lenght
+identifier_name:
+min_length: # only min_length
+error: 1 # only error
+warning: 2
+excluded: # excluded via string array
+- id
+- URL
+- GlobalAPIKey
+reporter: "xcode"
+
+excluded:
+- Carthage
+- Pods
+- Events4Me/R.generated.swift
+

@@ -1,0 +1,39 @@
+PODS:
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxGesture (2.2.0):
+    - RxCocoa (~> 4.5)
+    - RxSwift (~> 4.5)
+  - RxSwift (4.5.0)
+  - SwiftLint (0.32.0)
+
+DEPENDENCIES:
+  - R.swift
+  - RxCocoa
+  - RxGesture
+  - RxSwift
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - R.swift
+    - R.swift.Library
+    - RxCocoa
+    - RxGesture
+    - RxSwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
+
+PODFILE CHECKSUM: 0cb92001942b3fd861777d66ab60a36408b8ae4a
+
+COCOAPODS: 1.6.1

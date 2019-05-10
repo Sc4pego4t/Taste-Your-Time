@@ -1,0 +1,9 @@
+disabled_rules:
+- line_length
+- discouraged_direct_init
+- trailing_whitespace
+excluded:
+- Pods
+- TYT/R.generated.swift
+force_cast: warning # implicitly
+force_try: warning # explicitly

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8d8-Fb-jQZ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ближайшие-->
+        <scene sceneID="WBZ-cU-vBv">
+            <objects>
+                <viewController title="Ближайшие" id="8d8-Fb-jQZ" customClass="ClosestRestsVC" customModule="TYT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wIZ-gD-Ome">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-Cl-r1w">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8d8-Fb-jQZ" id="il7-tA-Jla"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLN-6e-LNX" customClass="RoundShadowButton" customModule="TYT" customModuleProvider="target">
+                                <rect key="frame" x="338" y="786" width="52" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Psr-hr-ApG"/>
+                                    <constraint firstAttribute="height" constant="52" id="h0m-8j-IoS"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="14" minY="18" maxX="16" maxY="14"/>
+                                <state key="normal" image="location"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NYi-Cl-r1w" firstAttribute="leading" secondItem="nOG-rh-Swk" secondAttribute="leading" id="DqA-Qu-G14"/>
+                            <constraint firstItem="NYi-Cl-r1w" firstAttribute="top" secondItem="nOG-rh-Swk" secondAttribute="top" id="Mq6-B4-YEf"/>
+                            <constraint firstItem="nOG-rh-Swk" firstAttribute="bottom" secondItem="pLN-6e-LNX" secondAttribute="bottom" constant="24" id="TFp-XQ-v8j"/>
+                            <constraint firstItem="nOG-rh-Swk" firstAttribute="trailing" secondItem="NYi-Cl-r1w" secondAttribute="trailing" id="UOS-xc-5VC"/>
+                            <constraint firstItem="nOG-rh-Swk" firstAttribute="bottom" secondItem="NYi-Cl-r1w" secondAttribute="bottom" id="gfe-hn-55S"/>
+                            <constraint firstItem="nOG-rh-Swk" firstAttribute="trailing" secondItem="pLN-6e-LNX" secondAttribute="trailing" constant="24" id="mcs-uu-ge2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nOG-rh-Swk"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="NYi-Cl-r1w" id="46H-pJ-nSV"/>
+                        <outlet property="myLocationButton" destination="pLN-6e-LNX" id="uXM-bF-PeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNG-qN-u17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="-197"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location" width="40" height="40"/>
+    </resources>
+</document>
