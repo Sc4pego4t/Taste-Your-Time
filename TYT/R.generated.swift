@@ -169,8 +169,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
   struct nib {
+    /// Nib `AddToCartDialog`.
+    static let addToCartDialog = _R.nib._AddToCartDialog()
     /// Nib `ImageMenuTVCell`.
     static let imageMenuTVCell = _R.nib._ImageMenuTVCell()
     /// Nib `RestDetailsMapView`.
@@ -179,6 +181,12 @@ struct R: Rswift.Validatable {
     static let restMenuCVC = _R.nib._RestMenuCVC()
     /// Nib `RestMenuTVC`.
     static let restMenuTVC = _R.nib._RestMenuTVC()
+    
+    /// `UINib(name: "AddToCartDialog", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.addToCartDialog) instead")
+    static func addToCartDialog(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.addToCartDialog)
+    }
     
     /// `UINib(name: "ImageMenuTVCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.imageMenuTVCell) instead")
@@ -202,6 +210,10 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.restMenuTVC) instead")
     static func restMenuTVC(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.restMenuTVC)
+    }
+    
+    static func addToCartDialog(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> AddToCartDialog? {
+      return R.nib.addToCartDialog.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? AddToCartDialog
     }
     
     static func imageMenuTVCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ImageMenuTVCell? {
@@ -235,12 +247,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
     /// Storyboard `ClosestRests`.
     static let closestRests = _R.storyboard.closestRests()
-    /// Storyboard `LaunchScreen`.
-    static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
     /// Storyboard `RestMenu`.
@@ -249,11 +259,6 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "ClosestRests", bundle: ...)`
     static func closestRests(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.closestRests)
-    }
-    
-    /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
-    static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
     }
     
     /// `UIStoryboard(name: "Main", bundle: ...)`
@@ -271,14 +276,21 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 2 localization tables.
   struct string {
-    /// This `R.string.errors` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.errors` struct is generated, and contains static references to 2 localization keys.
     struct errors {
       /// Value: Wrong storyboard
       static let storyboard = Rswift.StringResource(key: "storyboard", tableName: "Errors", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Wrong view
+      static let view = Rswift.StringResource(key: "view", tableName: "Errors", bundle: R.hostingBundle, locales: [], comment: nil)
       
       /// Value: Wrong storyboard
       static func storyboard(_: Void = ()) -> String {
         return NSLocalizedString("storyboard", tableName: "Errors", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Wrong view
+      static func view(_: Void = ()) -> String {
+        return NSLocalizedString("view", tableName: "Errors", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}
@@ -366,6 +378,17 @@ struct _R: Rswift.Validatable {
       try _RestDetailsMapView.validate()
     }
     
+    struct _AddToCartDialog: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "AddToCartDialog"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> AddToCartDialog? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? AddToCartDialog
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _ImageMenuTVCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = ImageMenuTVCell
       
@@ -433,7 +456,6 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try closestRests.validate()
-      try launchScreen.validate()
       try main.validate()
       try restMenu.validate()
     }
@@ -446,20 +468,6 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "location", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'location' is used in storyboard 'ClosestRests', but couldn't be loaded.") }
-        if #available(iOS 11.0, *) {
-        }
-      }
-      
-      fileprivate init() {}
-    }
-    
-    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIKit.UIViewController
-      
-      let bundle = R.hostingBundle
-      let name = "LaunchScreen"
-      
-      static func validate() throws {
         if #available(iOS 11.0, *) {
         }
       }

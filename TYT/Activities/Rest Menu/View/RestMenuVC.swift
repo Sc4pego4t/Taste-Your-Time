@@ -11,9 +11,14 @@ import UIKit
 import RxSwift
 
 class RestMenuVC: UIViewController, ViewModelBased {
-
+  
   var viewModel = RestMenuVM()
   var disposeBag = DisposeBag()
+  
+//  var addToCardPopup = AddToCartBottomPopup(
+//    dialogView: R.nib.addToCartDialog(owner: nil),
+//    dialogHeight: AddToCartDialog.dialogHeight)
+
   @IBOutlet weak var menuTableView: UITableView!
 
   override func viewDidLoad() {

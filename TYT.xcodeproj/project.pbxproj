@@ -43,11 +43,15 @@
 		091867592285D0D300BEF758 /* RestMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867582285D0D300BEF758 /* RestMenuVM.swift */; };
 		0918675B2285D68A00BEF758 /* RestMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918675A2285D68A00BEF758 /* RestMenuVC.swift */; };
 		0918675D2286064F00BEF758 /* +CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918675C2286064F00BEF758 /* +CAGradientLayer.swift */; };
+		0918675F22871B5400BEF758 /* ValueStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918675E22871B5400BEF758 /* ValueStepper.swift */; };
+		0918676222871C8900BEF758 /* AddToCartDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918676122871C8900BEF758 /* AddToCartDialog.swift */; };
+		0918676422871CA200BEF758 /* AddToCartDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0918676322871CA200BEF758 /* AddToCartDialog.xib */; };
+		09186766228724FB00BEF758 /* AddToCartBottomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09186765228724FB00BEF758 /* AddToCartBottomPopup.swift */; };
+		091867692288288D00BEF758 /* BottomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091867682288288D00BEF758 /* BottomPopup.swift */; };
 		0968F1A422841DD00077158D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1A322841DD00077158D /* AppDelegate.swift */; };
 		0968F1A622841DD00077158D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1A522841DD00077158D /* MainVC.swift */; };
 		0968F1A922841DD00077158D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0968F1A722841DD00077158D /* Main.storyboard */; };
 		0968F1AB22841DD40077158D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0968F1AA22841DD40077158D /* Assets.xcassets */; };
-		0968F1AE22841DD40077158D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0968F1AC22841DD40077158D /* LaunchScreen.storyboard */; };
 		0968F1BA228428500077158D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1B9228428500077158D /* R.generated.swift */; };
 		76F0F45E27D724037A123B0D /* Pods_TYT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C76638CA586785BB689B2CB /* Pods_TYT.framework */; };
 /* End PBXBuildFile section */
@@ -89,12 +93,16 @@
 		091867582285D0D300BEF758 /* RestMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuVM.swift; sourceTree = "<group>"; };
 		0918675A2285D68A00BEF758 /* RestMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMenuVC.swift; sourceTree = "<group>"; };
 		0918675C2286064F00BEF758 /* +CAGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+CAGradientLayer.swift"; sourceTree = "<group>"; };
+		0918675E22871B5400BEF758 /* ValueStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStepper.swift; sourceTree = "<group>"; };
+		0918676122871C8900BEF758 /* AddToCartDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartDialog.swift; sourceTree = "<group>"; };
+		0918676322871CA200BEF758 /* AddToCartDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddToCartDialog.xib; sourceTree = "<group>"; };
+		09186765228724FB00BEF758 /* AddToCartBottomPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartBottomPopup.swift; sourceTree = "<group>"; };
+		091867682288288D00BEF758 /* BottomPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopup.swift; sourceTree = "<group>"; };
 		0968F1A022841DD00077158D /* TYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0968F1A322841DD00077158D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0968F1A522841DD00077158D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0968F1A822841DD00077158D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0968F1AA22841DD40077158D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0968F1AD22841DD40077158D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0968F1AF22841DD40077158D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0968F1B9228428500077158D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0C76638CA586785BB689B2CB /* Pods_TYT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +125,7 @@
 		091866F122842BDA00BEF758 /* Nib */ = {
 			isa = PBXGroup;
 			children = (
+				0918676022871BB300BEF758 /* Add To Cart Dialog */,
 				091867472285CB4900BEF758 /* Rest Menu Item Cell */,
 				091867462285CB2D00BEF758 /* Rest Menu Cell */,
 				0918672C228556C600BEF758 /* Rest Details Map View */,
@@ -204,11 +213,8 @@
 			children = (
 				09186708228453BB00BEF758 /* Custom Views */,
 				091867052284455200BEF758 /* Extensions */,
-				0918672022846D7100BEF758 /* ViewModelBased.swift */,
-				0918672A228490E200BEF758 /* Routable.swift */,
-				0918672222846D9C00BEF758 /* ViewModel.swift */,
-				0918672822848FEB00BEF758 /* Router.swift */,
 				091867392285955D00BEF758 /* ColorPalette.swift */,
+				091867682288288D00BEF758 /* BottomPopup.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -227,6 +233,7 @@
 			children = (
 				09186709228453CA00BEF758 /* ShadowView.swift */,
 				09186735228589F400BEF758 /* RoundShadowButton.swift */,
+				0918675E22871B5400BEF758 /* ValueStepper.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -328,8 +335,29 @@
 			isa = PBXGroup;
 			children = (
 				0918675A2285D68A00BEF758 /* RestMenuVC.swift */,
+				09186765228724FB00BEF758 /* AddToCartBottomPopup.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0918676022871BB300BEF758 /* Add To Cart Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				0918676122871C8900BEF758 /* AddToCartDialog.swift */,
+				0918676322871CA200BEF758 /* AddToCartDialog.xib */,
+			);
+			path = "Add To Cart Dialog";
+			sourceTree = "<group>";
+		};
+		091867672288271B00BEF758 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0918672022846D7100BEF758 /* ViewModelBased.swift */,
+				0918672A228490E200BEF758 /* Routable.swift */,
+				0918672222846D9C00BEF758 /* ViewModel.swift */,
+				0918672822848FEB00BEF758 /* Router.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		0968F19722841DD00077158D = {
@@ -353,13 +381,13 @@
 		0968F1A222841DD00077158D /* TYT */ = {
 			isa = PBXGroup;
 			children = (
+				091867672288271B00BEF758 /* Base */,
 				091867042284454C00BEF758 /* Utils */,
 				09186701228434AF00BEF758 /* Resources */,
 				091866F322842DAF00BEF758 /* Activities */,
 				0968F1BB228428740077158D /* Interface */,
 				0968F1B9228428500077158D /* R.generated.swift */,
 				0968F1A322841DD00077158D /* AppDelegate.swift */,
-				0968F1AC22841DD40077158D /* LaunchScreen.storyboard */,
 				0968F1AF22841DD40077158D /* Info.plist */,
 			);
 			path = TYT;
@@ -455,9 +483,9 @@
 			files = (
 				091867032284350900BEF758 /* Localizable.strings in Resources */,
 				091867452285CACE00BEF758 /* RestMenu.storyboard in Resources */,
-				0968F1AE22841DD40077158D /* LaunchScreen.storyboard in Resources */,
 				0968F1AB22841DD40077158D /* Assets.xcassets in Resources */,
 				091866FB22842EF100BEF758 /* ImageMenuTVCell.xib in Resources */,
+				0918676422871CA200BEF758 /* AddToCartDialog.xib in Resources */,
 				09186730228558C600BEF758 /* RestDetailsMapView.xib in Resources */,
 				0918671B2284699900BEF758 /* Errors.strings in Resources */,
 				0968F1A922841DD00077158D /* Main.storyboard in Resources */,
@@ -569,6 +597,7 @@
 				0918673E2285A07F00BEF758 /* RestMapClusterView.swift in Sources */,
 				091867552285CF8F00BEF758 /* Menu.swift in Sources */,
 				0918675B2285D68A00BEF758 /* RestMenuVC.swift in Sources */,
+				0918676222871C8900BEF758 /* AddToCartDialog.swift in Sources */,
 				091866FD228432C900BEF758 /* MainMenuItem.swift in Sources */,
 				0918673C22859D2500BEF758 /* RestMapAnnotationView.swift in Sources */,
 				091867192284682500BEF758 /* ClosestRestsVC.swift in Sources */,
@@ -578,10 +607,13 @@
 				091867592285D0D300BEF758 /* RestMenuVM.swift in Sources */,
 				091867422285AEC600BEF758 /* ClosestRestsRouter.swift in Sources */,
 				0968F1A422841DD00077158D /* AppDelegate.swift in Sources */,
+				0918675F22871B5400BEF758 /* ValueStepper.swift in Sources */,
 				0918670A228453CA00BEF758 /* ShadowView.swift in Sources */,
 				0918674F2285CD8400BEF758 /* RestMenuCVC.swift in Sources */,
 				09186736228589F500BEF758 /* RoundShadowButton.swift in Sources */,
+				091867692288288D00BEF758 /* BottomPopup.swift in Sources */,
 				0918672B228490E200BEF758 /* Routable.swift in Sources */,
+				09186766228724FB00BEF758 /* AddToCartBottomPopup.swift in Sources */,
 				0918672922848FEB00BEF758 /* Router.swift in Sources */,
 				0918671F22846A4800BEF758 /* RestInfo.swift in Sources */,
 				0918672322846D9C00BEF758 /* ViewModel.swift in Sources */,
@@ -608,14 +640,6 @@
 				0968F1A822841DD00077158D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0968F1AC22841DD40077158D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0968F1AD22841DD40077158D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -743,6 +767,7 @@
 			baseConfigurationReference = B40AB496EECE3F0061D0D2C0 /* Pods-TYT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8PL728Q2L;
 				INFOPLIST_FILE = TYT/Info.plist;
@@ -763,6 +788,7 @@
 			baseConfigurationReference = F6CE63028CF81494FCBDCF3F /* Pods-TYT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8PL728Q2L;
 				INFOPLIST_FILE = TYT/Info.plist;

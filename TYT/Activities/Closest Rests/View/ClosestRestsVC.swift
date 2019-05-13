@@ -16,12 +16,13 @@ class ClosestRestsVC: UIViewController, ViewModelBased, Routable {
   var router = ClosestRestsRouter()
 
   var disposeBag = DisposeBag()
-  var detailsPopup = BottomDetailsPopup()
-  let locationManager = CLLocationManager()
+  var detailsPopup = BottomDetailsPopup(
+    dialogView: R.nib.restDetailsMapView(owner: nil),
+    dialogHeight: UIApplication.shared.keyWindow!.frame.width)
 
+  let locationManager = CLLocationManager()
   private let regionRadius: CLLocationDistance = 40000
   private let userRadius: CLLocationDistance = 5000
-
   private let initialLocation = CLLocation(latitude: 59.938, longitude: 30.314)
 
   @IBOutlet weak var mapView: MKMapView!
@@ -93,6 +94,6 @@ extension ClosestRestsVC: MKMapViewDelegate {
     guard let annotation = view.annotation as? RestMapPointAnnotation else {
       return
     }
-    detailsPopup.showPopup(withInfo: annotation.restInfo, router: router)
+    detailsPopup.showPopup(with: annotation.restInfo, router: router)
   }
 }
