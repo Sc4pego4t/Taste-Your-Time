@@ -15,6 +15,9 @@ class RestMenuCVC: UICollectionViewCell {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var priceButton: UIButton!
 
+	static let height: CGFloat = 250
+	static let width: CGFloat = 200
+	
   var menuItem: MenuItem! {
     didSet {
       itemImageView.image = menuItem.image

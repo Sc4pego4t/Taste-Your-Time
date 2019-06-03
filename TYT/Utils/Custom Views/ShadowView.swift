@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ShadowView: UIView {
+class ShadowView: LightView {
 
   func setShadow(shadowColor: CGColor = UIColor.black.cgColor,
                  shadowOffset: CGSize = CGSize(width: 0, height: 3.0),
-                 shadowOpacity: Float = 0.8,
+                 shadowOpacity: Float = 0.4,
                  shadowRadius: CGFloat) {
     self.layer.shadowColor = shadowColor
     self.layer.shadowOffset = shadowOffset

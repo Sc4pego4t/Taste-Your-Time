@@ -10,15 +10,16 @@ import UIKit
 import RxSwift
 import MapKit
 import RxCocoa
+
 class ClosestRestsVC: UIViewController, ViewModelBased, Routable {
 
   var viewModel = ClosestRestsVM()
   var router = ClosestRestsRouter()
 
   var disposeBag = DisposeBag()
-  var detailsPopup = BottomDetailsPopup(
-    dialogView: R.nib.restDetailsMapView(owner: nil),
-    dialogHeight: UIApplication.shared.keyWindow!.frame.width)
+//  var detailsPopup = BottomDetailsPopup(
+//    dialogView: R.nib.restDetailsMapView(owner: nil),
+//    dialogHeight: UIApplication.shared.keyWindow!.frame.width)
 
   let locationManager = CLLocationManager()
   private let regionRadius: CLLocationDistance = 40000
@@ -42,9 +43,9 @@ class ClosestRestsVC: UIViewController, ViewModelBased, Routable {
     super.viewDidLoad()
     router.attach(viewController: self)
     setupBindings()
-    setupLocationManager()
-    setupMapView()
-    viewModel.requestData()
+//    setupLocationManager()
+//    setupMapView()
+//    viewModel.requestData()
     mapView.showsUserLocation = true
   }
 
@@ -54,13 +55,13 @@ class ClosestRestsVC: UIViewController, ViewModelBased, Routable {
       self.restInfoList = items
     }).disposed(by: disposeBag)
 
-    myLocationButton.rx.tap
-      .subscribe(onNext: { _ in
-        guard let location = self.mapView.userLocation.location else {
-          return
-        }
-        self.centreMap(on: location, withRadius: self.userRadius)
-      }).disposed(by: disposeBag)
+//    myLocationButton.rx.tap
+//      .subscribe(onNext: { _ in
+//        guard let location = self.mapView.userLocation.location else {
+//          return
+//        }
+//        self.centerMap(on: location, withRadius: self.userRadius)
+//      }).disposed(by: disposeBag)
   }
 
 }
@@ -81,10 +82,10 @@ extension ClosestRestsVC: MKMapViewDelegate {
 
     mapView.register(RestMapAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
 
-    centreMap(on: initialLocation, withRadius: regionRadius)
+    centerMap(on: initialLocation, withRadius: regionRadius)
   }
 
-  func centreMap(on location: CLLocation, withRadius radius: Double) {
+  func centerMap(on location: CLLocation, withRadius radius: Double) {
     let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: radius, longitudinalMeters: radius)
     mapView.setRegion(coordinateRegion, animated: true)
   }
@@ -94,6 +95,6 @@ extension ClosestRestsVC: MKMapViewDelegate {
     guard let annotation = view.annotation as? RestMapPointAnnotation else {
       return
     }
-    detailsPopup.showPopup(with: annotation.restInfo, router: router)
+//    detailsPopup.showPopup(with: annotation.restInfo, router: router)
   }
 }

@@ -18,6 +18,10 @@ class MainVC: UIViewController, ViewModelBased, Routable {
   @IBOutlet weak var mainMenuTV: UITableView!
 
   private let disposeBag = DisposeBag()
+	
+	override func viewDidAppear(_ animated: Bool) {
+		setupNavigationBar()
+	}
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -26,6 +30,8 @@ class MainVC: UIViewController, ViewModelBased, Routable {
     viewModel.requestData()
     mainMenuTV.rowHeight = ImageMenuTVCell.cellHeight
     mainMenuTV.separatorStyle = .none
+		
+		navigationController?.navigationBar.shadowImage = UIImage()
   }
 
   func setupBindings() {
@@ -41,8 +47,7 @@ class MainVC: UIViewController, ViewModelBased, Routable {
       cell.viewContainer.rx.tapGesture()
         .when(.recognized)
         .subscribe (onNext: { _ in
-          print("CLICK\(item)")
-          self.router.go(toRoute: item.type)
+          self.router.go(toRoute: item.type, withImage: cell.itemImageView.image)
         }).disposed(by: self.disposeBag)
 
     }.disposed(by: disposeBag)

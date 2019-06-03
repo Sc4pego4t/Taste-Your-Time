@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,6 +54,15 @@
 		0968F1AB22841DD40077158D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0968F1AA22841DD40077158D /* Assets.xcassets */; };
 		0968F1BA228428500077158D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968F1B9228428500077158D /* R.generated.swift */; };
 		76F0F45E27D724037A123B0D /* Pods_TYT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C76638CA586785BB689B2CB /* Pods_TYT.framework */; };
+		F9992DEF22A3ED6F009363B5 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9992DEE22A3ED6F009363B5 /* ThemeManager.swift */; };
+		F9992DF122A3EDBA009363B5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9992DF022A3EDBA009363B5 /* Theme.swift */; };
+		F9992DF422A44674009363B5 /* DarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9992DF322A44674009363B5 /* DarkView.swift */; };
+		F9992DF622A446A9009363B5 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9992DF522A446A9009363B5 /* LightView.swift */; };
+		F9D98E2A229A9C590099A964 /* IDs.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9D98E29229A9C590099A964 /* IDs.strings */; };
+		F9D98E2C229AA3F50099A964 /* +UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D98E2B229AA3F50099A964 /* +UIViewController.swift */; };
+		F9D98E2E229AD6990099A964 /* StarViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D98E2D229AD6990099A964 /* StarViewContainer.swift */; };
+		F9D98E31229AD6E20099A964 /* StarViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9D98E30229AD6E20099A964 /* StarViewContainer.xib */; };
+		F9D98E35229B0D870099A964 /* +UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D98E34229B0D870099A964 /* +UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +117,15 @@
 		0C76638CA586785BB689B2CB /* Pods_TYT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40AB496EECE3F0061D0D2C0 /* Pods-TYT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYT.debug.xcconfig"; path = "Target Support Files/Pods-TYT/Pods-TYT.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CE63028CF81494FCBDCF3F /* Pods-TYT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYT.release.xcconfig"; path = "Target Support Files/Pods-TYT/Pods-TYT.release.xcconfig"; sourceTree = "<group>"; };
+		F9992DEE22A3ED6F009363B5 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		F9992DF022A3EDBA009363B5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F9992DF322A44674009363B5 /* DarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkView.swift; sourceTree = "<group>"; };
+		F9992DF522A446A9009363B5 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		F9D98E29229A9C590099A964 /* IDs.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = IDs.strings; sourceTree = "<group>"; };
+		F9D98E2B229AA3F50099A964 /* +UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIViewController.swift"; sourceTree = "<group>"; };
+		F9D98E2D229AD6990099A964 /* StarViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewContainer.swift; sourceTree = "<group>"; };
+		F9D98E30229AD6E20099A964 /* StarViewContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarViewContainer.xib; sourceTree = "<group>"; };
+		F9D98E34229B0D870099A964 /* +UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,28 +140,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		091866F122842BDA00BEF758 /* Nib */ = {
-			isa = PBXGroup;
-			children = (
-				0918676022871BB300BEF758 /* Add To Cart Dialog */,
-				091867472285CB4900BEF758 /* Rest Menu Item Cell */,
-				091867462285CB2D00BEF758 /* Rest Menu Cell */,
-				0918672C228556C600BEF758 /* Rest Details Map View */,
-				091866F722842EB900BEF758 /* Image Menu Cell */,
-			);
-			path = Nib;
-			sourceTree = "<group>";
-		};
-		091866F222842BE500BEF758 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				0968F1A722841DD00077158D /* Main.storyboard */,
-				0918670C2284588700BEF758 /* ClosestRests.storyboard */,
-				091867442285CACE00BEF758 /* RestMenu.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
 		091866F322842DAF00BEF758 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				0968F1A522841DD00077158D /* MainVC.swift */,
+				0968F1A722841DD00077158D /* Main.storyboard */,
+				091866F722842EB900BEF758 /* Image Menu Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +202,7 @@
 				0968F1AA22841DD40077158D /* Assets.xcassets */,
 				091867022284350900BEF758 /* Localizable.strings */,
 				0918671A2284699900BEF758 /* Errors.strings */,
+				F9D98E29229A9C590099A964 /* IDs.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -211,6 +210,7 @@
 		091867042284454C00BEF758 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F9992DED22A3ED5E009363B5 /* Theme */,
 				09186708228453BB00BEF758 /* Custom Views */,
 				091867052284455200BEF758 /* Extensions */,
 				091867392285955D00BEF758 /* ColorPalette.swift */,
@@ -224,6 +224,8 @@
 			children = (
 				0918673F2285A6B300BEF758 /* +UIImage.swift */,
 				0918675C2286064F00BEF758 /* +CAGradientLayer.swift */,
+				F9D98E2B229AA3F50099A964 /* +UIViewController.swift */,
+				F9D98E34229B0D870099A964 /* +UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -231,6 +233,8 @@
 		09186708228453BB00BEF758 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				F9992DF222A44654009363B5 /* New Group */,
+				F9D98E2F229AD6C80099A964 /* Star View Container */,
 				09186709228453CA00BEF758 /* ShadowView.swift */,
 				09186735228589F400BEF758 /* RoundShadowButton.swift */,
 				0918675E22871B5400BEF758 /* ValueStepper.swift */,
@@ -257,6 +261,8 @@
 				0918673722858C5200BEF758 /* RestMapPointAnnotation.swift */,
 				0918673B22859D2500BEF758 /* RestMapAnnotationView.swift */,
 				0918673D2285A07F00BEF758 /* RestMapClusterView.swift */,
+				0918670C2284588700BEF758 /* ClosestRests.storyboard */,
+				0918672C228556C600BEF758 /* Rest Details Map View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +342,10 @@
 			children = (
 				0918675A2285D68A00BEF758 /* RestMenuVC.swift */,
 				09186765228724FB00BEF758 /* AddToCartBottomPopup.swift */,
+				091867442285CACE00BEF758 /* RestMenu.storyboard */,
+				091867462285CB2D00BEF758 /* Rest Menu Cell */,
+				091867472285CB4900BEF758 /* Rest Menu Item Cell */,
+				0918676022871BB300BEF758 /* Add To Cart Dialog */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,21 +395,11 @@
 				091867042284454C00BEF758 /* Utils */,
 				09186701228434AF00BEF758 /* Resources */,
 				091866F322842DAF00BEF758 /* Activities */,
-				0968F1BB228428740077158D /* Interface */,
 				0968F1B9228428500077158D /* R.generated.swift */,
 				0968F1A322841DD00077158D /* AppDelegate.swift */,
 				0968F1AF22841DD40077158D /* Info.plist */,
 			);
 			path = TYT;
-			sourceTree = "<group>";
-		};
-		0968F1BB228428740077158D /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				091866F222842BE500BEF758 /* Storyboard */,
-				091866F122842BDA00BEF758 /* Nib */,
-			);
-			path = Interface;
 			sourceTree = "<group>";
 		};
 		452C3B3AD14F02B8FF669A9C /* Pods */ = {
@@ -417,6 +417,33 @@
 				0C76638CA586785BB689B2CB /* Pods_TYT.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9992DED22A3ED5E009363B5 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F9992DEE22A3ED6F009363B5 /* ThemeManager.swift */,
+				F9992DF022A3EDBA009363B5 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		F9992DF222A44654009363B5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F9992DF322A44674009363B5 /* DarkView.swift */,
+				F9992DF522A446A9009363B5 /* LightView.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F9D98E2F229AD6C80099A964 /* Star View Container */ = {
+			isa = PBXGroup;
+			children = (
+				F9D98E2D229AD6990099A964 /* StarViewContainer.swift */,
+				F9D98E30229AD6E20099A964 /* StarViewContainer.xib */,
+			);
+			path = "Star View Container";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,12 +509,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				091867032284350900BEF758 /* Localizable.strings in Resources */,
+				F9D98E31229AD6E20099A964 /* StarViewContainer.xib in Resources */,
 				091867452285CACE00BEF758 /* RestMenu.storyboard in Resources */,
 				0968F1AB22841DD40077158D /* Assets.xcassets in Resources */,
 				091866FB22842EF100BEF758 /* ImageMenuTVCell.xib in Resources */,
 				0918676422871CA200BEF758 /* AddToCartDialog.xib in Resources */,
 				09186730228558C600BEF758 /* RestDetailsMapView.xib in Resources */,
 				0918671B2284699900BEF758 /* Errors.strings in Resources */,
+				F9D98E2A229A9C590099A964 /* IDs.strings in Resources */,
 				0968F1A922841DD00077158D /* Main.storyboard in Resources */,
 				091867502285CD8400BEF758 /* RestMenuCVC.xib in Resources */,
 				0918674C2285CB9500BEF758 /* RestMenuTVC.xib in Resources */,
@@ -542,22 +571,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TYT/Pods-TYT-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TYT/Pods-TYT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TYT/Pods-TYT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -596,6 +614,7 @@
 				0918671D22846A0A00BEF758 /* ClosestRestsVM.swift in Sources */,
 				0918673E2285A07F00BEF758 /* RestMapClusterView.swift in Sources */,
 				091867552285CF8F00BEF758 /* Menu.swift in Sources */,
+				F9992DF622A446A9009363B5 /* LightView.swift in Sources */,
 				0918675B2285D68A00BEF758 /* RestMenuVC.swift in Sources */,
 				0918676222871C8900BEF758 /* AddToCartDialog.swift in Sources */,
 				091866FD228432C900BEF758 /* MainMenuItem.swift in Sources */,
@@ -607,15 +626,20 @@
 				091867592285D0D300BEF758 /* RestMenuVM.swift in Sources */,
 				091867422285AEC600BEF758 /* ClosestRestsRouter.swift in Sources */,
 				0968F1A422841DD00077158D /* AppDelegate.swift in Sources */,
+				F9D98E2C229AA3F50099A964 /* +UIViewController.swift in Sources */,
 				0918675F22871B5400BEF758 /* ValueStepper.swift in Sources */,
 				0918670A228453CA00BEF758 /* ShadowView.swift in Sources */,
+				F9D98E35229B0D870099A964 /* +UIColor.swift in Sources */,
 				0918674F2285CD8400BEF758 /* RestMenuCVC.swift in Sources */,
+				F9992DF422A44674009363B5 /* DarkView.swift in Sources */,
 				09186736228589F500BEF758 /* RoundShadowButton.swift in Sources */,
 				091867692288288D00BEF758 /* BottomPopup.swift in Sources */,
 				0918672B228490E200BEF758 /* Routable.swift in Sources */,
 				09186766228724FB00BEF758 /* AddToCartBottomPopup.swift in Sources */,
+				F9D98E2E229AD6990099A964 /* StarViewContainer.swift in Sources */,
 				0918672922848FEB00BEF758 /* Router.swift in Sources */,
 				0918671F22846A4800BEF758 /* RestInfo.swift in Sources */,
+				F9992DEF22A3ED6F009363B5 /* ThemeManager.swift in Sources */,
 				0918672322846D9C00BEF758 /* ViewModel.swift in Sources */,
 				091866FA22842EF100BEF758 /* ImageMenuTVCell.swift in Sources */,
 				0918673A2285955D00BEF758 /* ColorPalette.swift in Sources */,
@@ -624,6 +648,7 @@
 				0918673422856CBE00BEF758 /* BottomDetailsPopup.swift in Sources */,
 				0918672722848E8400BEF758 /* MainMenuRouter.swift in Sources */,
 				0918674B2285CB9500BEF758 /* RestMenuTVC.swift in Sources */,
+				F9992DF122A3EDBA009363B5 /* Theme.swift in Sources */,
 				091867002284336700BEF758 /* MainMenuVM.swift in Sources */,
 				091867572285CF9F00BEF758 /* MenuItem.swift in Sources */,
 				0918672122846D7100BEF758 /* ViewModelBased.swift in Sources */,

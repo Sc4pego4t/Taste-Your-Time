@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import Hero
 
 enum MainRouteEnum {
   case closestRests, foodCountry, recent
@@ -20,13 +22,15 @@ class MainMenuRouter: Router {
     self.viewController = viewController
   }
 
-  func go(toRoute route: MainRouteEnum) {
+	func go(toRoute route: MainRouteEnum, withImage image: UIImage? = nil) {
     switch route {
     case .recent:
-      guard let restMenuVC = R.storyboard.restMenu().instantiateInitialViewController() else {
+      guard let restMenuVC = R.storyboard.restMenu().instantiateInitialViewController() as? RestMenuVC else {
         fatalError(R.string.errors.storyboard())
       }
-
+			
+			restMenuVC.heroID = R.string.iDs.heroID()
+			restMenuVC.image = image
       viewController.navigationController?.pushViewController(restMenuVC, animated: true)
     case .closestRests:
       guard let closestRestsVC = R.storyboard.closestRests().instantiateInitialViewController() else {

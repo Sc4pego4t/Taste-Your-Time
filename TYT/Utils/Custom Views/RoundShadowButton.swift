@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class RoundShadowButton: UIButton {
+class RoundShadowButton: LightView {
   override func layoutSubviews() {
     super.layoutSubviews()
 

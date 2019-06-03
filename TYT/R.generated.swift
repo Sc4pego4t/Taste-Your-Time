@@ -169,7 +169,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 6 nibs.
   struct nib {
     /// Nib `AddToCartDialog`.
     static let addToCartDialog = _R.nib._AddToCartDialog()
@@ -181,6 +181,8 @@ struct R: Rswift.Validatable {
     static let restMenuCVC = _R.nib._RestMenuCVC()
     /// Nib `RestMenuTVC`.
     static let restMenuTVC = _R.nib._RestMenuTVC()
+    /// Nib `StarViewContainer`.
+    static let starViewContainer = _R.nib._StarViewContainer()
     
     /// `UINib(name: "AddToCartDialog", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.addToCartDialog) instead")
@@ -212,6 +214,12 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.restMenuTVC)
     }
     
+    /// `UINib(name: "StarViewContainer", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.starViewContainer) instead")
+    static func starViewContainer(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.starViewContainer)
+    }
+    
     static func addToCartDialog(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> AddToCartDialog? {
       return R.nib.addToCartDialog.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? AddToCartDialog
     }
@@ -230,6 +238,10 @@ struct R: Rswift.Validatable {
     
     static func restMenuTVC(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RestMenuTVC? {
       return R.nib.restMenuTVC.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RestMenuTVC
+    }
+    
+    static func starViewContainer(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.starViewContainer.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
     
     fileprivate init() {}
@@ -274,7 +286,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 2 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
   struct string {
     /// This `R.string.errors` struct is generated, and contains static references to 2 localization keys.
     struct errors {
@@ -291,6 +303,19 @@ struct R: Rswift.Validatable {
       /// Value: Wrong view
       static func view(_: Void = ()) -> String {
         return NSLocalizedString("view", tableName: "Errors", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.iDs` struct is generated, and contains static references to 1 localization keys.
+    struct iDs {
+      /// Value: heroID
+      static let heroID = Rswift.StringResource(key: "heroID", tableName: "IDs", bundle: R.hostingBundle, locales: [], comment: nil)
+      
+      /// Value: heroID
+      static func heroID(_: Void = ()) -> String {
+        return NSLocalizedString("heroID", tableName: "IDs", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}
@@ -376,6 +401,7 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _RestDetailsMapView.validate()
+      try _StarViewContainer.validate()
     }
     
     struct _AddToCartDialog: Rswift.NibResourceType {
@@ -445,6 +471,23 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RestMenuTVC? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RestMenuTVC
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _StarViewContainer: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "StarViewContainer"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "filledstar", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'filledstar' is used in nib 'StarViewContainer', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
       }
       
       fileprivate init() {}

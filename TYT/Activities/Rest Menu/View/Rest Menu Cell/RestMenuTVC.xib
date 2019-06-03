@@ -12,24 +12,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestMenuCell" rowHeight="480" id="KGk-i7-Jjw" customClass="RestMenuTVC" customModule="TYT" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="392" height="480"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestMenuCell" rowHeight="369" id="KGk-i7-Jjw" customClass="RestMenuTVC" customModule="TYT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="511" height="369"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="392" height="479.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="511" height="368.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uu4-em-Zw7">
-                        <rect key="frame" x="0.0" y="0.0" width="392" height="479.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uu4-em-Zw7" customClass="DarkView" customModule="TYT" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="511" height="368.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-uo-pae">
-                                <rect key="frame" x="12" y="12" width="368" height="32.5"/>
+                                <rect key="frame" x="12" y="12" width="487" height="32.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="prF-fN-eHO">
-                                <rect key="frame" x="0.0" y="54.5" width="392" height="425"/>
+                                <rect key="frame" x="0.0" y="54.5" width="511" height="314"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C9B-hA-tKN">
                                     <size key="itemSize" width="50" height="50"/>
@@ -64,7 +64,7 @@
                 <outlet property="headerLabel" destination="ba6-uo-pae" id="xq2-85-shG"/>
                 <outlet property="itemsCollectionView" destination="prF-fN-eHO" id="JPj-lk-sYt"/>
             </connections>
-            <point key="canvasLocation" x="123.18840579710145" y="105.13392857142857"/>
+            <point key="canvasLocation" x="-110.86956521739131" y="67.96875"/>
         </tableViewCell>
     </objects>
 </document>

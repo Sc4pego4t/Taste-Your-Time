@@ -27,7 +27,13 @@ class RestMenuVM: ViewModel {
           MenuItem(name: "Греческий Салат", price: 720, image: R.image.greek()),
           MenuItem(name: "Цезарь", price: 760, image: R.image.zezar()),
           MenuItem(name: "Салат с Лососем", price: 860, image: R.image.losos())
-        ], menuType: "Холодные блюда")
+        ], menuType: "Холодные блюда"),
+			Menu(
+				menu: [
+					MenuItem(name: "Греческий Салат", price: 720, image: R.image.greek()),
+					MenuItem(name: "Цезарь", price: 760, image: R.image.zezar()),
+					MenuItem(name: "Салат с Лососем", price: 860, image: R.image.losos())
+				], menuType: "Холодные блюда")
     ]
     self.fullMenu.onNext(fullMenu)
   }

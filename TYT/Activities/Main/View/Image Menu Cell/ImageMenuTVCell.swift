@@ -20,6 +20,9 @@ class ImageMenuTVCell: UITableViewCell {
       itemImageView.image = menuItem.image
       mainTextView.text = menuItem.mainText
       secondaryTextView.text = menuItem.secondaryText
+			if menuItem.type == .recent {
+				itemImageView.hero.id = R.string.iDs.heroID()
+			}
     }
   }
 

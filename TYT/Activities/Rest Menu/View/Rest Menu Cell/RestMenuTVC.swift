@@ -28,7 +28,7 @@ class RestMenuTVC: UITableViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     setupBinding()
-    collectionViewFlow.itemSize = CGSize(width: 200, height: 250)
+    collectionViewFlow.itemSize = CGSize(width: RestMenuCVC.width, height: RestMenuCVC.height)
   }
 
   func setupBinding() {

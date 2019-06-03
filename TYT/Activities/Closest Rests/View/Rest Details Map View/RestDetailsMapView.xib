@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="408" height="388"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PwW-XM-ibI">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PwW-XM-ibI" customClass="LightView" customModule="TYT" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="44" width="408" height="310"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elrest" translatesAutoresizingMaskIntoConstraints="NO" id="W7C-FT-7yS">
